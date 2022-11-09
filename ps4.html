@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div>
+        <form>
+            <h1>Fill below form for booking of Bus ticket</h1>
+         <input type="text" placeholder="Enter your Name" required>
+         <p><b>Select Gender</b></p>
+         <label>
+         <input type="radio" name="gender" value="gender" id="Female" required>Female
+         </label>
+         <label>
+         <input type="radio" name="gender" value="gender" id="Male" required>Male
+        </label>
+        <br>
+        <br>
+        <select name="state" id="state" required>
+        <option value="various states">Select your state </option>
+        <option value="Maharastra">Maharastra</option>
+        <option value="Gujrat">Gujrat</option>
+        <option value="Rajastan">Rajastan</option>
+        </select>
+        <br>
+        <br>
+        <P><b>Select bus type </b></P>
+        <label>
+            <input type="radio" name="bus type" id="bus type">AC
+        </label>
+        <label>
+            <input type="radio" name="bus type" id="bus type">Non AC
+        </label>
+        <br>
+        <br>
+        <div>
+            <textarea name="Address" placeholder="Enter your pickup Location" cols="30" rows="4" id="Address" required></textarea>
+        </div>
+        <br>
+        <div>
+            Enter departure date<input type="date" value="Enter departure date" id="date" name="date" min="2022-01-01" max="2022-12-31">
+        </div>
+        <br>
+            <div>
+                Mobile number<input type="tel"  id="contact" placeholder="Enter contact details" name="contact" pattern="[0-9]{10}" required>
+            </div>
+            <br>
+            <div>
+                Email<input type="email" name="email" id="e" pattern=".+@gmail.com" size="30" required>
+            </div>
+            <br>
+            <div>
+                <input type="submit" name="sub" id="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
